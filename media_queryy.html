@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .container {
+            width: 80vw;
+            border: 2px solid red;
+            background-color: rgb(143, 244, 153);
+            margin-top: 50px;
+            display: grid;
+            padding: 20px;
+            grid-template-columns: auto auto auto auto;
+            align-items: center;
+        }
+
+        .items {
+            border: 2px solid #b85959;
+            background-color: rgb(99, 156, 161);
+            margin: 10px;
+        }
+
+        @media only screen and (max-width : 320px) {
+            .container {
+                grid-template-columns: auto;
+                margin-top: 100px;
+            }
+            .items{
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width : 321px) {
+            .container {
+                grid-template-columns: auto auto;
+                text-align: center;
+              
+            }
+        }
+        @media only screen and (min-width : 500px) {
+            .container {
+                grid-template-columns: auto auto auto;
+                text-align: center;
+            }
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="items">java</div>
+        <div class="items">boot</div>
+        <div class="items">react</div>
+        <div class="items">node</div>
+        <div class="items">css</div>
+        <div class="items">hero</div>
+        <div class="items">html</div>
+        <div class="items">python</div>
+        <div class="items">javascript</div>
+        <div class="items">lorem</div>
+        <div class="items">mongo</div>
+        <div class="items">meta</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+
+<!-- /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...} -->
